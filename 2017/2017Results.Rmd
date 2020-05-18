@@ -16,11 +16,11 @@ Werdykt: NA
 
 ERROR: dependency ‘Iso’ is not available for package ‘ORCME’
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 003
 
-Werdykt: 3
+Werdykt: **3**
 
 ### 004
 
@@ -30,19 +30,19 @@ Werdykt: 3
 
 `fns <- makeFunctionsByName(fn.names, dimensions = 2)` - error: argument "m" is missing, with no default
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 005
 
 W R-studio nie da się wpisać części znaków.
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 006
 
 `o<-data.frame(ode(y=stocks, times=simtime, func = model, parms=NULL, method="euler"))` - Error: The number of derivatives returned by func() (20must equal the length of the initial conditions vector (11)
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 007
 
@@ -50,7 +50,7 @@ Generalnie powinien dostać 0 za nieprawidłowe ścieżki do plików
 
 `clusters_ts(...)` - figure margins too large
 
-Gdyby nie ścieżki, byłoby 2
+Werdykt: **2**
 
 ### 008
 `summary(GA)` - nieco inne wyniki
@@ -59,23 +59,23 @@ Gdyby nie ścieżki, byłoby 2
 
 `GA <- gaisl` - Error: task 1 failed - "missing value where TRUE/FALSE needed"
 
-Werdykt: 1
+Werdykt: **1**
 
 ### 009
 
 `plotNA.imputations(tsAirgap, x.imp, tsAirgapComplete)` - Error: object 'x.imp' not found
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 010
 
 `fm3Orth_fix.lme <- ` - Error: iteration limit reached without convergence (10)
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 011
 
-Werdykt: 3
+Werdykt: **3**
 
 ### 012
 `performance(pred, measures = list(multilabel.hamloss, timepredict))` - inny timepredict, zależny od maszyny
@@ -84,7 +84,7 @@ Werdykt: 3
 
 `head(getMultilabelBinaryPerformances(r$pred, measures = list(acc, mmce, auc)))` - nieco inne wartości
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 013
 `tapply(trainData$Z, trainData$ID, function(x) sum(x) > 0) %>% as.numeric` - inne wartości
@@ -101,7 +101,7 @@ Werdykt: 2
 
 `download.file(paste0(dataUrl, dataName), filePath)` - pobiera inny plik
 
-Werdykt: 0 - nie udało się zreprodukować żadnego przykładu.
+Werdykt: **0** - nie udało się zreprodukować żadnego przykładu.
 
 ### 014
 
@@ -135,7 +135,8 @@ Figure 1 - inaczej wygląda
 `SPCproperty(data = X, nrep = 50, chart = chartAsymExp, property = "ARL", params = list(alpha = 0.01), quiet = TRUE)` - nieco inne wartości
 
 Zasadniczo w większości są nieznaczne odchyły.
-Werdykt: 1
+
+Werdykt: **1**
 
 ### 015
 
@@ -146,12 +147,13 @@ Werdykt: 1
 `plot(prostate.cutpoint1)` - nie działa
 Inne ploty też.
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 016
 
 `boston.xgb <- train(x = data.matrix(subset(boston, select = -cmedv)), y = boston$cmedv, method = "xgbTree", metric = "Rsquared", trControl = trainControl(method = "cv", number = 10), tuneLength = 10)` - Error in summary.connection(connection) : invalid connection
-Werdykt: 2
+
+Werdykt: **2**
 
 ### 017
 
@@ -159,7 +161,7 @@ Werdykt: 2
 
 `PUMS$race.educint <- wec.interact(PUMS$race.wec, PUMS$education.int)` - Error: Supplied 30000 items to be assigned to 10000 items of column 'race.educint'.
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 018
 
@@ -167,7 +169,7 @@ Werdykt: 2
 
 `c(fit.mic$min.Q, fit0.mic$min.Q, fit1.mic$min.Q)` - nieco inne wyniki
 
-Werdykt: 3
+Werdykt: **3**
 
 ### 019
 
@@ -179,11 +181,11 @@ Na Windowsie na R 3.6.3 poszło
 `query$title[[1]]` - subscript out of bonds
 You have no access to ec.europe.eu (bo się przenieśli do ec.europa.eu)
 
-Werdykt: 0
+Werdykt: **0**
 
 ### 020
 
-Werdykt: 3
+Werdykt: **3**
 
 ### Podsumowanie
 

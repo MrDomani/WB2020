@@ -1,7 +1,6 @@
 ---
 title: "2019 Results"
 author: "Paweł Morgen"
-date: "11/05/2020"
 output: html_document
 ---
 

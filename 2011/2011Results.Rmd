@@ -9,50 +9,61 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 ### 001
 `c(ZH, NY)` - wyświetla się tylko Zurich
-Werdykt: 2
+
+Werdykt: **2**
 
 ### 002
 `testthat` <3
-Werdykt: 3
+
+Werdykt: **3**
 
 ### 003
 package `snatm` is not available (for R version 4.0.0)
-Werdykt: 0
+
+Werdykt: **0**
 
 ### 004
 
-Werdykt: 3
+Werdykt: **3**
 
 ### 005
 
 `rbind(tickers, round(100 * pContribCVaR, 2))` - niewielkie różnice
+
 `round(100 * mu , 2)` - różnica przy MSFT (-0.37 != 0.21)
-Werdykt: 2
+
+Werdykt: **2**
 
 ### 006
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 007
 package ‘boolfun’ is not available (for R version 4.0.0)
-Werdykt: 0
+Werdykt: **0**
 
 ### 008
+
 package ‘ReadImages’ is not available (for R version 4.0.0)
-Werdykt: 2
+
+Werdykt: **2**
 
 ### 009
 `plot(srftFit, srftData, dates = "2004013100")` - Error in if (is.na(x)) x <- -2^20 : argument is of length zero
-Werdykt: 0
+
+Werdykt: **0**
 
 ### 010
 `ob <- replace.order(ob, 1231883, 150)` - Error in if (tmp.size < size) { : argument is of length zero
+
 `ob <- simulate(ob)` - Error in UseMethod("simulate") : 
   no applicable method for 'simulate' applied to an object of class "orderbook"
-Werdykt: 2
+
+Werdykt: **2**
 
 ### Podsumowanie
 
+<div style="width:200px">
 |Rating|Freq|
 |-----:|:---|
 |0     |3   |
@@ -60,3 +71,4 @@ Werdykt: 2
 |2     |5   |
 |3     |2   |
 |NA    |0   |
+</div>

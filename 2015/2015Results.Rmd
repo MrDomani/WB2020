@@ -10,31 +10,36 @@ knitr::opts_chunk$set(echo = TRUE)
 ### 001
 
 `aacomp(seq = "GLPRKILCAIAKKKGKCKGPLKLVCKC")` - could not find function "aacomp"
+
 `aindex(seq = "GLPRKILCAIAKKKGKCKGPLKLVCKC")` - could not find function "aindex"
+
 `instaindex(seq = "GLPRKILCAIAKKKGKCKGPLKLVCKC")` - could not find function "instaindex"
+
 `md <- read.xvg(file)` - could not find function "read.xvg"
+
 `train.rpart <- train(group~., data = training, method = "rpart", metric = "ROC", tuneLength = 10, trControl = fitControl)` - Error
 
-Werdykt: 1
+Werdykt: **1**
 
 ### 002
 
 Warning: package 'tsbugs' not available (for R version 3.6.3 and 4.0.0)
 
-Werdykt: 1
+Werdykt: **1**
 
 ### 003
 
 Warning: package 'sparkTable' not available (for R version 3.6.3 and 4.0.0)
 
-Werdykt: 0
+Werdykt: **0**
 
 ### 004
 
 `(rdplot(y = vote, x = margin, title = "RD Plot - Senate Elections Data", y.label = "Vote Share in Election at time t+1", x.label = "Vote Share in Election at time t"))` - Nieco inny output, wykres OK
+
 `rdbwselect(y = vote, x = margin, bwselect = "CV", cvgrid_min = 10, cvgrid_max = 80, cvplot = TRUE)` - Error: unused arguments
 
-Werdykt: 2
+Werdykt: **2**
 
 ### 005
 
@@ -42,7 +47,7 @@ Werdykt: 2
 `Compare(yA, yB, DatA$ProbA, DatB$ProbB, DatA$Domain, DatB$Domain)` - nieco inne wyniki
 `CalSF(yA, yB, PiklA, PiklB, DatA$ProbB, DatB$ProbA, DatA$Domain, DatB$Domain, N_ab = 601)` - nieco inne wyniki
 
-Werdykt: 3 (Nieznaczne różnice)
+Werdykt: **3** (Nieznaczne różnice)
 
 ### 006
 
@@ -54,16 +59,16 @@ Werdykt: 3 (Nieznaczne różnice)
 `head(valsigma)` - inne wartości
 ...
 Generalnie wszystko działa, tylko z reguły zwraca nie to, co trzeba. Choć zbliżone.
-Werdykt: 1
+Werdykt: **1**
 
 ### 007
 `EB$fit$summary` - nieco inny output, ale wartości się zgadzają
 
-Werdykt: 3
+Werdykt: **3**
 
 ### 008
 
-Werdykt: 3
+Werdykt: **3**
 
 ### 009
 Werdykt: NA - Nie ma czego reprodukować
@@ -73,10 +78,11 @@ Werdykt: NA - Nie ma czego reprodukować
 `plot(res.cagalt, choix = "quali.var", conf.ellip = TRUE, axes = c(1, 4))` - Error in data.frame(facteur = label, res) : 
   arguments imply differing number of rows: 0, 200
   
-Werdykt: 2
+Werdykt: **2**
 
 ### Podsumowanie
 
+<div style="width:200px">
 |Rating|Freq|
 |-----:|:---|
 |0     |1   |
@@ -84,3 +90,4 @@ Werdykt: 2
 |2     |2   |
 |3     |3   |
 |NA    |1   |
+</div>

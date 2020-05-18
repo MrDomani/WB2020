@@ -1,0 +1,196 @@
+---
+title: "2016 Results"
+author: "Paweł Morgen"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### 030
+`X not found`; `data not found` - trzeba samemy zrobić referencje
+
+`samplestat` not found
+
+`match.int` must be 2*number of matching variables
+
+najwyraźniej coś zmienili z czasem
+
+fit nie działa
+
+Werdykt : **2**
+
+###  031 
+package QPot not available (for R 4.0.0 and 3.6.3)
+
+Werdykt : **0**
+
+###  032 
+
+package TRONCO not available (for R 4.0.0 and 3.6.3)
+
+Werdykt : **0**
+
+###  033 
+figure 2 akceptowalne
+
+round() - inne wartości
+
+Pozamieniana kolejność wierszy
+
+`diversity(data = scidat_rca_fil, type = c('rao', 'rs') ,alpha=0.7, beta = 0.3, method = 'cosine')` - unused arguments
+package ‘firdistrplus’ is not available (for R version 4.0.0)
+`head(sim_ent)` - inne wartości
+diversity(data_set, type=c("e")), diversity(data_set, type=c("rs")) - unused argument
+
+Werdykt: **1**
+
+###  034 
+
+strasznie długo zajmuje
+
+Werdykt: NA
+
+###  035 
+package ‘eiCompare’ is not available (for R version 4.0.0 and 3.6.3)
+
+Werdykt: **0**
+
+###  036 
+
+package rgdal not installing
+Werdykt: **0**
+
+###  037 
+
+`plot(midquantile(y, probs = p), jumps = FALSE)` - p not found
+`kt <- KhmaladzeTest(formula = y ~ x, taus = seq(.05, .95, by = .01),` - ) zamiast ,
+figure 2 - 50%
+
+figure 4 - inny wygląd
+
+`system.time(fit.rqt <- rcrq(Ozone ~ Solar.R, data = dd, tsf = "mcjI", symm = TRUE, dbounded = FALSE, lambda = seq(1, 3, by = 0.005), tau = c(.1, .5, .9)))` - czasy inne. Wina maszyny
+
+`summary(fit.rqt, conditional = FALSE, se = "nid")` - inne wartości
+`coef(tsrq2(score ~ gcse, data = chemsub, dbounded = TRUE, lambda = seq(0, 2, by = 0.1), delta = seq(0, 2, by = 0.1), tau = 0.9), all = TRUE)` - object chemsub not found
+figure 6 - no source
+
+Werdykt : **2**
+
+###  038 
+
+długo się robi
+
+Werdykt: NA
+###  039 
+werdykt: 3
+
+###  040 
+`summary(post.lasso.reg, all=FALSE)` - inne wartości
+`print(lasso.effect)` - inne wartości
+`summary(lasso.effect)` - inne wartości
+`confint(lasso.effect)` -   inne wartości
+`confint(lasso.effect, joint = TRUE)` - inne wartości
+`summary(lasso.reg, all=FALSE)` - inne wartości
+`joint.CI` - inne wartości
+`summary(lasso.IV.Z)` - inne wartości
+`summary(lasso.IV.XZ)` - inne wartości
+...
+Werdykt: **1**
+
+###  041 
+
+`norm.ss(alpha = 0.05, P = 0.90, side = 2, spec = c(0.990, 1.010), method = "DIR", hyper.par = list(mu.0 = 1.004, sig2.0 = 0.001))` - n Inf zamiast 5. Niewielki
+
+`norm.OC(k = 4, alpha = c(0.01, 0.05, 0.10), P = NULL, n = 10:20, side = 2, method = "EXACT", m = 25)` - długo działa
+
+Werdykt: **3**
+### 042 
+na plus: działa
+na minus: nie mam danych
+WerdyKt: NA
+
+### 043 
+dependency ‘units’ is not available for package ‘sf’
+Werdykt: NA
+### 044 
+object theta not found - trzeba pokombinować
+
+dużo wykresów, mało kodu
+
+Werdykt: **2**
+
+### 045 
+funkcje generują ploty - niejasne, czy to zamierzone
+
+Werdykt: **3**
+
+### 046 
+
+`binary.ps` - not found BSM, age, 
+...
+
+Problem z NSE
+
+Werdykt: **1**
+
+### 047 
+`represent_enrichment(enrichment = list(Corrected = results[1:6,],                                       Uncorrected = results_uncorrected[1:6,]), plot = "heatmap", scale = "reverselog", low = "steelblue" , high ="white", na.value = "grey")` - not found results_uncorrdected
+
+data_matrix <- navicell$readDatatable('DU145_data.txt') - no such file or directory, ...
+
+packages not available
+
+Werdykt: **1**
+
+### 048 
+Brak danych
+werdykt: **0**
+
+###  049 
+`ADCFplot(Residuals, MaxLag = 18, main = "Wild Bootstrap", method = "Wild")` - unused argument method
+
+`t=scale(lseries, center = TRUE, scale = FALSE)` - lseries not found
+
+`t2 <- at^2` - at not found
+
+Werdykt: **1**
+
+###  050 
+install.packages("comf_0.1.6.tar.gz", repos=NULL, type="source") - !
+Werdykt: **2**
+
+### 051 
+rgdal not available
+Werdykt: **0**
+### 052 
+`faccsex <- factor(csex)` - no varialble csex
+`piv.bsp <- npqr(formula = form.par, basis = basis.bsp, var = "cage", taus = taus,
+nderivs = 1, average = 1, print.taus = print.taus, B = B, uniform = TRUE)` - 'data' is missing
+
+Werdykt: **0** - zmienne z datasetu nie są wyeksportowane
+
+### 053 
+Package is not initialized, please call nmfgpu4R.init() first!
+rror in nmfgpu4R.init() : No CUDA toolkit detected on this system
+werdykt : **0**
+
+### 054 
+
+`result1 <- psel(df, low(x) * low(y))` - 
+Evaluation of base preference low(x) does not have the same length as the data frame!
+
+Werdykt: **2**
+
+### Podsumowanie
+
+<div style="width:200px">
+|Rating|Freq|
+|------|----|
+|0     |3   |
+|1     |5   |
+|2     |5   |
+|3     |7   |
+|NA    |5   |
+</div>
