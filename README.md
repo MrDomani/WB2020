@@ -7,4 +7,6 @@ Tytuł artykułu: *Aging articles. How time affects reproducibility of scientifi
 
 [repozytorium przedmiotu](https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc)
 
+[repozytorium z ebookiem](https://github.com/mini-pw/2020L-WB-Book)
+
 [repozytorium pakietu pomocniczego](https://github.com/MrDomani/CodeExtractoR)
