@@ -1,0 +1,198 @@
+---
+title: "2017 Results"
+author: "Paweł Morgen"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### 001
+
+Same Benchmarki
+Werdykt: NA
+
+### 002
+
+ERROR: dependency ‘Iso’ is not available for package ‘ORCME’
+
+Werdykt: 2
+
+### 003
+
+Werdykt: 3
+
+### 004
+
+`fn = makeDTLZ2Function(dimensions = 2L, n.objectives = 2L) visualizeParetoOptimalFront(fn, show.only.front = TRUE)` - Error in fn(unlist(x), ...) : unused argument (show.only.front = TRUE)
+
+`print(length(fn.names))` - 51 zamiast 46
+
+`fns <- makeFunctionsByName(fn.names, dimensions = 2)` - error: argument "m" is missing, with no default
+
+Werdykt: 2
+
+### 005
+
+W R-studio nie da się wpisać części znaków.
+
+Werdykt: 2
+
+### 006
+
+`o<-data.frame(ode(y=stocks, times=simtime, func = model, parms=NULL, method="euler"))` - Error: The number of derivatives returned by func() (20must equal the length of the initial conditions vector (11)
+
+Werdykt: 2
+
+### 007
+
+Generalnie powinien dostać 0 za nieprawidłowe ścieżki do plików
+
+`clusters_ts(...)` - figure margins too large
+
+Gdyby nie ścieżki, byłoby 2
+
+### 008
+`summary(GA)` - nieco inne wyniki
+
+`GA2 <- ...` - Error: Non-numeric argument to mathematical function
+
+`GA <- gaisl` - Error: task 1 failed - "missing value where TRUE/FALSE needed"
+
+Werdykt: 1
+
+### 009
+
+`plotNA.imputations(tsAirgap, x.imp, tsAirgapComplete)` - Error: object 'x.imp' not found
+
+Werdykt: 2
+
+### 010
+
+`fm3Orth_fix.lme <- ` - Error: iteration limit reached without convergence (10)
+
+Werdykt: 2
+
+### 011
+
+Werdykt: 3
+
+### 012
+`performance(pred, measures = list(multilabel.hamloss, timepredict))` - inny timepredict, zależny od maszyny
+
+`r` - inny output
+
+`head(getMultilabelBinaryPerformances(r$pred, measures = list(acc, mmce, auc)))` - nieco inne wartości
+
+Werdykt: 2
+
+### 013
+`tapply(trainData$Z, trainData$ID, function(x) sum(x) > 0) %>% as.numeric` - inne wartości
+
+`summary(milrFit_EST)` - inne wartości
+
+`coef(milrFit_EST)` - inne wartości
+
+`fitted(milrFit_EST, type = "bag")` - inne wartości
+
+`table(DATA = tapply(trainData$Z, trainData$ID, function(x) sum(x) > 0) %>% as.numeric, FITTED = fitted(milrFit_EST, type = "bag"))` - inne wartości
+
+`coef(milrFit_VS) %>% .[abs(.) > 0]` - inny output
+
+`download.file(paste0(dataUrl, dataName), filePath)` - pobiera inny plik
+
+Werdykt: 0 - nie udało się zreprodukować żadnego przykładu.
+
+### 014
+
+`str(xihat)` - inne wartości
+
+`cal` - inne wartości
+
+`SPCproperty(data = X, nrep = 50, property = "calhitprob", chart = chart, params = list(target = 0.05, nsteps=100), covprob = 0.9, quiet = TRUE)` - nieco inne wartości
+Figure 1 - inaczej wygląda
+
+`str(xihat)` - inne wartości
+
+`SPCproperty(data = X, nrep = 50, property = "ARL", chart = chartShew, params = list(threshold = 3), quiet = TRUE)` - inne wartości
+
+`cal` - nieco inne wartości
+
+`xihat` - inne wartości
+
+`cal` - inne wartości
+
+`calEWMA` - nieco inne wartości
+
+`SPCproperty(data = X, nrep = 50, property = "calARL", chart = chartrobust, params = list(target = 100), quiet = TRUE)` - inne wartości
+
+`cal` - nieco inne wartości
+
+`SPCproperty(data = X, nrep = 50, chart = chartAsym, property = "ARL", params = list(alpha = 0.01), quiet = TRUE)` - nieco inne wartości
+
+`SPCproperty(data = X, nrep = 50, property = "calARL", chart = chartAsym, params = list(target = 100), quiet = TRUE)` - nieco inne wartości
+
+`SPCproperty(data = X, nrep = 50, chart = chartAsymExp, property = "ARL", params = list(alpha = 0.01), quiet = TRUE)` - nieco inne wartości
+
+Zasadniczo w większości są nieznaczne odchyły.
+Werdykt: 1
+
+### 015
+
+`summary(melanoma.cutpoint2)` - nieco inne wartości
+
+`plot(melanoma.cutpoint1)` - nie działa
+
+`plot(prostate.cutpoint1)` - nie działa
+Inne ploty też.
+
+Werdykt: 2
+
+### 016
+
+`boston.xgb <- train(x = data.matrix(subset(boston, select = -cmedv)), y = boston$cmedv, method = "xgbTree", metric = "Rsquared", trControl = trainControl(method = "cv", number = 10), tuneLength = 10)` - Error in summary.connection(connection) : invalid connection
+Werdykt: 2
+
+### 017
+
+`contrasts(PUMS$education.wec) <- contr.wec(PUMS$education.cat, "High school")` - Error: contrasts apply only to factors
+
+`PUMS$race.educint <- wec.interact(PUMS$race.wec, PUMS$education.int)` - Error: Supplied 30000 items to be assigned to 10000 items of column 'race.educint'.
+
+Werdykt: 2
+
+### 018
+
+`c(fit.mic$min.Q, fit0.mic$min.Q)` - nieco inne wyniki
+
+`c(fit.mic$min.Q, fit0.mic$min.Q, fit1.mic$min.Q)` - nieco inne wyniki
+
+Werdykt: 3
+
+### 019
+
+`ERROR: dependency ‘units’ is not available for package ‘sf’`
+Na Windowsie na R 3.6.3 poszło
+
+`query <- ...` Warning: 1 parsing failure
+
+`query$title[[1]]` - subscript out of bonds
+You have no access to ec.europe.eu (bo się przenieśli do ec.europa.eu)
+
+Werdykt: 0
+
+### 020
+
+Werdykt: 3
+
+### Podsumowanie
+
+<div style="width:200px">
+|Rating|Freq|
+|------|----|
+|0     |2   |
+|1     |2   |
+|2     |11  |
+|3     |4   |
+|NA    |0   |
+</div>

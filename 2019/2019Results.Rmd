@@ -1,0 +1,128 @@
+---
+title: "2019 Results"
+author: "Paweł Morgen"
+date: "11/05/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### 021
+
+Werdykt: **3**
+
+### 022
+
+*Considerable time to run*. Innym razem
+
+### 023
+Figure 5 - inny wygląd przez maszynę. Przesłanie zgodne z treścią artykułu
+
+`sapply(list(DTW = pc_dtw, kShape = pc_ks, TADPole = pc_tp), cvi, b = CharTrajLabels[60L:100L], type = "VI")` - **inne wyniki**
+
+`sapply(pc_k, cvi, type = "internal` - **inne wyniki**
+
+`cl_dissimilarity(pc_4)` - **inne wyniki**
+
+`matrix(clusters@cluster, ncol = 5L, byrow = TRUE)` - **inne wyniki**
+
+Werdykt: **2**
+
+### 024
+Warning in install.packages :
+  installation of package ‘rgeos’ had non-zero exit status
+
+unable to find an inhereted method for function 'shift' for signature \`"numeric"\`.
+
+Werdykt: **0**
+
+### 025
+Warning in install.packages :
+  package ‘StarBioTrek’ is not available (for R version 4.0.0 & 3.6.3)
+
+Werdykt: **0**
+
+### 026
+Długo się robi - innym razem
+
+### 027
+`Design_result$baseline_table` - **inne wyniki**
+
+`Design_result$cluster_coin_des` - **NULL zamiast wyników** (R 4.0.0)
+
+`Design_cov_result$baseline_table` - **inne wyniki**
+
+`Design_cov_result$cluster_coin_des` - **inne wyniki, znaczna różnica**
+
+Werdykt: **1**
+
+### 028
+`imp2 <- jomo(Y, X = X, beta.start = beta.start, l1cov.start = l1cov.start, l1cov.prior = l1cov.prior, nburn = 200, nbetween = 200, nimp = 5)` - lekko inne wyniki
+
+`summary(results)` - **inne wyniki**
+
+`imp <- jomo(Y = Y, X = X)` - lekko inne wyniki
+
+`imp <- jomo(Y = Y, X = X, clus = clus, nburn = 2000, nbetween = 1000, nimp = 5)` - **inne wyniki**
+
+`summary(results)` - **inne wyniki**
+
+`imp <- jomo(Y = Y, Y2 = Y2, clus = clus)` - lekko inne wyniki
+
+`testEstimates(fit.imp, var.comp = TRUE)` - lekko inne wyniki
+
+Werdykt: **2**
+
+### 029
+
+`head(da)` - **znacznie inne wartości**
+
+`KnownError(data = da, indA = "A", indYerror = "Yast", indX = "X1", sensitivity = 0.95, specificity = 0.85, confidence=0.95)` - **inne wartości**
+
+`head(mainda)`  - **znacznie inne wartości**
+
+`head(validationda)`  - **znacznie inne wartości**
+
+`head(da)` - **znacznie inne wartości**
+
+Werdykt : **0**
+
+### 030
+`o1$par` - nieznacznie inne wartości
+
+Werdykt : **3**
+
+### 031 
+
+Werdykt: **3**
+
+### 032
+Warning: package ‘roahd’ is not available (for R version 4.0.0 and 3.6.3)
+
+Werdykt: **0**
+
+### 034
+STOP - identyczny z 28
+
+### 035
+Werdykt: **3**
+
+### 036
+Autorzy: Gosiewska & Biecek
+Werdykt: **0** - nie udało się niczego zreprodukować
+
+### 037
+
+Werdykt: **3**
+
+### Podsumowanie
+
+|Rating|Freq|
+|-----:|:---|
+|0     |5   |
+|1     |1   |
+|2     |2   |
+|3     |5   |
+|NA    |2   |

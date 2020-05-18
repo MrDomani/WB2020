@@ -1,0 +1,73 @@
+---
+title: "2013 Results"
+author: "Paweł Morgen"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### 001
+Werdykt: 0 - 1 z algosów się wywalił
+
+### 002
+`out.GenSA$counts` - 5568 zamiast 3000
+W kilku innych miejscach podobnie
+
+Werdykt: 2
+
+### 003
+`text(mfa$ind$coord[sel, 1], mfa$ind$coord[sel, 2], rownames(mortality)[sel], pos=c(2, 2, 2, 2, 4, 2, 4))` - plot.new has not been called yet
+Podobnie w kilku innych miejscach
+
+`mortality[58, 1:9] # road accidents in 1979` - inne wyniki
+
+Werdykt: 2 (Większość wyników liczbowych się zgadza)
+
+### 004
+`manova.iris` inny output
+`coef(mod.iris.2)` - nieco inne wyniki
+`heplot(mod.iris.2, hypotheses=hyp, fill=c(TRUE, FALSE), col=c("red", "blue"))` - Error in constants(lhs, cnames_symb) : 
+  The hypothesis "SPPV:V" is not well formed: contains bad coefficient/variable names.
+  
+Werdykt: 2
+
+### 005
+`get_osm(node(18961430), source = src)` - Error: 1: Space required after the Public Identifier
+`muc <- get_osm(muc_bbox, src)` - cannot open the connection
+Werdykt: 0
+
+### 006
+
+Error: object 'ElNino2011smooth' not found
+Werdykt: 2
+
+### 007
+
+Warning in install.packages :
+  package ‘BrailleR’ is not available (for R version 4.0.0, 3.6.3)
+Werdykt: 0  
+### 008
+
+Warning in install.packages :
+  package ‘PIN’ is not available (for R version 4.0.0, 3.6.3)
+Werdykt: 0
+  
+### 009
+`calibrate(b, thresholds = th[2])` - Error: For fuzzy direct calibration, there should be either 3 or 6 thresholds".
+
+`round(calibrate(b, type = "fuzzy", thresholds = th), 2)` - inne wyniki
+`KrookSI$PIchart$i.sol$C1P1` - $ operator invalid for atomic vectors
+Werdykt: 1
+
+### 010
+Werdykt: 3
+### Podsumowanie
+
+|Rating|Freq|
+|-----:|:---|
+|0     |4   |
+|1     |1   |
+|2     |4   |
+|3     |1   |
+|NA    |0   |
